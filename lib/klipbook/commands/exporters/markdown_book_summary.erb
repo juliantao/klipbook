@@ -1,12 +1,14 @@
-# <%= title %>
-
-<% unless author.blank? %>
-*by <%= author %>*
-<% end %>
+---
+title: <%= title %>
+author: <% unless author.blank? %> <%= author %> <% end %>
+date: <% if last_update %> <%= last_update.strftime('%Y-%m-%d') %> <% end %>
+categories: []
+---
 
 <% sorted_clippings.each do |clipping| %>
   <% unless clipping.text.blank? %>
-<%= clipping.text %> <%= location_markdown(clipping.location) %>
+    <%= clipping.text %> [<%= location_markdown(clipping.location)]{.kloc} %>
 
+  ---
   <% end %>
 <% end %>
