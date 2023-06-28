@@ -104,6 +104,19 @@ Klipbook is a Ruby gem. To install simply run:
 $ gem install klipbook
 ```
 
+For local installation
+
+```sh
+sudo gem build klipbook.gemspec
+sudo gem install klipbook.4.0.1.gem
+```
+
+If rebuild is needed, remove the `gem` file first.
+
+```sh
+rm klipbook.4.0.1.gem
+```
+
 ## Supported Devices
 
 Klipbook has been tested on clippings files from 3rd generation Kindles and the Kindle Touch.
