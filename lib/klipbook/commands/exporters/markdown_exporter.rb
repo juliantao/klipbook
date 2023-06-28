@@ -7,7 +7,7 @@ module Klipbook
         end
 
         def extension
-          "md"
+          "qmd"
         end
 
         def template

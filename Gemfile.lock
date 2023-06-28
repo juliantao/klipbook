@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    klipbook (4.0.0)
+    klipbook (4.0.1)
       commander
 
 GEM
