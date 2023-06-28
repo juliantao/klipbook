@@ -7,7 +7,7 @@ categories: []
 
 <% sorted_clippings.each do |clipping| %>
   <% unless clipping.text.blank? %>
-<%= clipping.text %> [@<%= location_markdown(clipping.location) %>]{.kloc}
+<%= clipping.text %> [\@<%= location_markdown(clipping.location) %>]{.kloc}
 
 ---
   <% end %>
